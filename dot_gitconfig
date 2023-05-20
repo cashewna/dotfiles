@@ -1,0 +1,17 @@
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+[user]
+	name = Krishna Khong
+	email = krishna.khong@time-frame.com
+[core]
+	autocrlf = input 
+  eol = lf
+	excludesfile = C:\\Users\\rugaz\\Documents\\gitignore_global.txt
+[difftool "sourcetree"]
+	cmd = "'' "
+[mergetool "sourcetree"]
+	cmd = "'' "
+	trustExitCode = true

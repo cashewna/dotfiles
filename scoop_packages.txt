@@ -1,0 +1,29 @@
+
+Name                  Version            Source     Updated             Info
+----                  -------            ------     -------             ----
+7zip                  22.01              main       2023-05-14 19:05:12 
+aws                   2.11.20            main       2023-05-15 18:26:32 
+caddy                 2.6.4              main       2023-05-14 14:56:18 
+CascadiaCode-NF-Propo 3.0.1              nerd-fonts 2023-05-15 20:34:17 
+chezmoi               2.33.5             main       2023-05-14 16:44:02 
+clink                 1.4.24             main       2023-05-15 19:22:23 
+coreutils             5.97.3             main       2023-05-15 19:23:49 
+docker                24.0.0             main       2023-05-17 20:38:25 
+git-aliases           0.3.5              extras     2023-05-15 19:13:00 
+go                    1.20.4             main       2023-05-14 14:57:58 
+innounp               0.50               main       2023-05-14 19:32:27 
+lsd                   0.23.1             main       2023-05-15 19:27:27 
+mingw                 12.2.0-rt_v10-rev2 main       2023-05-15 18:36:17 
+mysql                 8.0.33             main       2023-05-16 15:33:26 
+neovim                0.9.0              main       2023-05-14 16:56:05 
+openjdk               20.0.1-9           java       2023-05-14 19:03:05 
+openssh               9.2.2.0p1          main       2023-05-15 19:01:52 
+openssl               3.1.0              main       2023-05-14 19:33:54 
+oraclejre8            8u371              java       2023-05-14 19:05:32 
+pnpm                  8.5.1              main       2023-05-20 19:44:01 
+pscale                0.142.0            pscale     2023-05-16 15:33:28 
+starship              1.14.2             main       2023-05-15 20:36:02 
+ugrep                 3.11.2             main       2023-05-15 19:17:33 
+vcredist2022          14.34.31938.0      extras     2023-05-15 19:28:27 
+wiztree               4.13               extras     2023-05-20 19:17:35 
+
