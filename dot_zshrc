@@ -1,16 +1,20 @@
-# Lines configured by zsh-newuser-install
-HISTFILE=~/.zsh_history
-HISTSIZE=10000
-SAVEHIST=10000
-setopt autocd extendedglob nomatch notify
-unsetopt beep
-bindkey -e
-# End of lines configured by zsh-newuser-install
-# The following lines were added by compinstall
-zstyle :compinstall filename '/c/Users/rugaz/.zshrc'
+# homebrew
+eval "$(/opt/homebrew/bin/brew shellenv)"
 
-autoload -Uz compinit
-compinit
-# End of lines added by compinstall
+# pnpm
+export PNPM_HOME="/Users/krishnakhong/Library/pnpm"
+case ":$PATH:" in
+  *":$PNPM_HOME:"*) ;;
+  *) export PATH="$PNPM_HOME:$PATH" ;;
+esac
+# pnpm end
 
-eval "$('/c/Program Files/starship/bin/starship.exe' init zsh)"
+#dotnet
+export DOTNET_ROOT="/opt/homebrew/opt/dotnet/libexec"
+case ":$PATH:" in
+  *":$DOTNET_ROOT:"*) ;;
+  *) export PATH="$DOTNET_ROOT:$PATH" ;;
+esac
+
+# starship
+eval "$(starship init zsh)"
