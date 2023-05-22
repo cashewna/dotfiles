@@ -1,17 +1,31 @@
-[filter "lfs"]
-	clean = git-lfs clean -- %f
-	smudge = git-lfs smudge -- %f
-	process = git-lfs filter-process
-	required = true
-[user]
-	name = Krishna Khong
-	email = krishna.khong@time-frame.com
+[includeIf "gitdir:~/dev/timeframe/"]
+	path = .gitconfig-timeframe
+
+[includeIf "gitdir:~/dev/personal/"]
+	path = .gitconfig-personal
+
 [core]
-	autocrlf = input 
-  eol = lf
-	excludesfile = C:\\Users\\rugaz\\Documents\\gitignore_global.txt
-[difftool "sourcetree"]
-	cmd = "'' "
-[mergetool "sourcetree"]
-	cmd = "'' "
-	trustExitCode = true
+  editor = nvim
+  autocrlf = input
+
+[diff]
+  colorMoved = true
+  compactionheuristic = true
+  mnemonicprefix = true ; replace a/b with (i)ndex/(c)ommit/(w)orking tree
+  renames = copies ; detect file copies as a type of rename
+
+[init]
+  defaultBranch = main
+
+[fetch]
+  prune = true
+  writeCommitGraph = true
+  
+[alias]
+  orphan = ! git log --pretty=oneline --abbrev-commit --graph --decorate `git reflog | cut -d \" \" -f 1
+
+  hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
+
+  # Safer alternative to --force
+	pf = push --force-with-leaseinit]
+	defaultBranch = main
